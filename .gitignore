@@ -1,0 +1,36 @@
+# 환경 변수 파일
+config/firebase-credentials.json
+.env
+
+# Firebase Admin SDK 인증 키
+firebase-adminsdk.json
+firebase-adminsdk-*.json
+
+# Android용 Firebase 설정 파일
+**/google-services.json
+
+# iOS용 Firebase 설정 파일
+**/GoogleService-Info.plist
+
+# macOS/iOS 자동 빌드 파일
+*.xcworkspace
+Pods/
+DerivedData/
+
+# Go 모듈 캐시
+bin/
+*.exe
+*.test
+*.out
+
+# OS/IDE 관련 파일
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Test results / Coverage
+*.log
+*.coverprofile
+coverage/
