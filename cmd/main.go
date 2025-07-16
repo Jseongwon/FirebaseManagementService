@@ -34,7 +34,8 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/auth/token", handler.IssueCustomToken)
-	mux.HandleFunc("/fcm/register", handler.RegisterFCMToken)
+	mux.HandleFunc("/fcm/generate", handler.GenerateFCMToken) // 새로운 서버 기반 토큰 발급
+	mux.HandleFunc("/fcm/register", handler.RegisterFCMToken) // 기존 클라이언트 토큰 등록
 	mux.HandleFunc("/fcm/send", handler.SendNotification)
 
 	log.Println("Server started at :8080")
